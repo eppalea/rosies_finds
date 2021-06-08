@@ -14,6 +14,9 @@ const dbParams = require("./lib/db");
 const db = new Pool(dbParams);
 db.connect();
 
+const users = require("./routes/users");
+const items = require("./routes/items");
+
 App.use("/api/users", users(db));
 
 App.use("/api/items", items(db));

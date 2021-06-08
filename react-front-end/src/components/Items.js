@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 
 const Items = () => {
   return <h2>Hello from items</h2>;

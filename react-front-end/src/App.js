@@ -1,17 +1,16 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React from "react";
 import "./App.css";
-import { Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-//component exports
+//component imports
 import Items from "./components/Items";
 
 export default function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
         <Route path="/items" exact component={Items} />
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }

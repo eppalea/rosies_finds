@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 module.exports = (db) => {
   //Get a User
-  router.get("/:userId", (req, req) => {
+  router.get("/:userId", (req, res) => {
     db.query(
       `
         SELECT * 
