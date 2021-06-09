@@ -20,8 +20,8 @@ const users = require("./routes/users");
 const items = require("./routes/items");
 
 App.use("/api/users", users(db));
-
 App.use("/api/items", items(db));
+App.use("/api/orders", orders(db));
 
 App.listen(PORT, () => {
   // eslint-disable-next-line no-console
@@ -29,3 +29,4 @@ App.listen(PORT, () => {
     `Express seems to be listening on port ${PORT} so that's pretty good 👍`
   );
 });
+
