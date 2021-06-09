@@ -1,6 +1,7 @@
 INSERT INTO users (first_name, last_name, email, password, admin)
-VALUES ('Sarah', 'Rosenkranz', 'rosiesfinds@outlook.com', 'Welcome1', TRUE),
-('Bradley', 'Beanie', 'bradley@beanworks.com', '123456', FALSE);
+VALUES ('Sarah', 'Rosenkranz', 'rosiesfinds@outlook.com', crypt('Welcome1', gen_salt('bf')), TRUE),
+('Bradley', 'Beanie', 'bradley@beanworks.com', crypt('123456', gen_salt('bf')), FALSE),
+('Eppa', 'Lea', 'eppalea@gmail.com', crypt('flight123', gen_salt('bf')), false);
 
 INSERT INTO items (name, price, current_status, description, image, quantity, user_id)
 VALUES ('blue vase', 20, 'available', '12" x 20"', 'www.wbtly.ca/s/LmXXzF', 1, 1),
