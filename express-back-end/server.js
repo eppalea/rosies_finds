@@ -18,6 +18,7 @@ db.connect();
 
 const users = require("./routes/users");
 const items = require("./routes/items");
+const orders = require("./routes/orders");
 
 App.use("/api/users", users(db));
 App.use("/api/items", items(db));
@@ -29,4 +30,3 @@ App.listen(PORT, () => {
     `Express seems to be listening on port ${PORT} so that's pretty good 👍`
   );
 });
-
