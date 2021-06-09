@@ -34,6 +34,26 @@
   height: 100%;
 }
 
+nav {
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+
+.nav-links {
+  width: 100%;
+  margin: 15px auto;
+  max-width: 1280px;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0px 40px 0px 0px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
