@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Items from "./components/Items";
 import About from "./components/About";
 import Sales from "./components/Sales";
+import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 
 export default function App() {
@@ -20,6 +21,9 @@ export default function App() {
       </Switch>
       <Switch>
         <Route path="/sales" exact component={Sales} />
+      </Switch>
+      <Switch>
+        <Route path="/contact" exact component={Contact} />
       </Switch>
     </BrowserRouter>
   );
