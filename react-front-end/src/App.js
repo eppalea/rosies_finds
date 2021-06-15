@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 //component imports
 import Items from "./components/Items";
 import About from "./components/About";
+import Sales from "./components/Sales";
 import Nav from "./components/Nav";
 
 export default function App() {
@@ -16,6 +17,9 @@ export default function App() {
       </Switch>
       <Switch>
         <Route path="/about" exact component={About} />
+      </Switch>
+      <Switch>
+        <Route path="/sales" exact component={Sales} />
       </Switch>
     </BrowserRouter>
   );
